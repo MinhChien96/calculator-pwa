@@ -1,0 +1,66 @@
+@import 'flex.scss';
+
+.open-screen {
+    animation: slide 0.3s cubic-bezier(0, 0, 0.2, 1) 0ms;
+    -webkit-animation: slide 0.3s cubic-bezier(0, 0, 0.2, 1) 0ms;
+    -moz-animation: slide 0.3s cubic-bezier(0, 0, 0.2, 1) 0ms;
+    -o-animation: slide 0.3s cubic-bezier(0, 0, 0.2, 1) 0ms;
+    -ms-animation: slide 0.3s cubic-bezier(0, 0, 0.2, 1) 0ms;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(100vw);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@-moz-keyframes slide {
+    0% {
+        transform: translateX(100vw);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@-webkit-keyframes slide {
+    0% {
+        transform: translateX(100vw);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@-o-keyframes slide {
+    0% {
+        transform: translateX(100vw);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@-ms-keyframes slide {
+    0% {
+        transform: translateX(100vw);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}

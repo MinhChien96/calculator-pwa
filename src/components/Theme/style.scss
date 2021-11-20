@@ -1,0 +1,53 @@
+.theme {
+    &_mask {
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 5;
+        height: 100%;
+        background-color: #00000073;
+    }
+
+    &_content {
+        z-index: 5;
+        position: fixed;
+        bottom: 3rem;
+        width: 100vw;
+        overflow: hidden;
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+        .wrap-content {
+            overflow-x: scroll;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+
+        .theme-item {
+            flex-shrink: 0;
+            width: 7rem;
+            height: 7rem;
+            border-radius: 50%;
+            border: 0.3rem solid #fff;
+            box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.08);
+
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: cover;
+            background-color: #fff;
+
+            &:not(:last-child) {
+                margin-right: 2.5rem;
+            }
+
+            &--active {
+                border-color: #0f4ba7;
+            }
+        }
+    }
+}

@@ -1,0 +1,77 @@
+.select-account {
+    min-height: 100vh;
+    background: #f7f7f7;
+    padding: 2.5rem 2.4rem;
+    font-family: 'AvertaStd', sans-serif;
+    position: relative;
+
+    &_title {
+        font-weight: bold;
+        font-size: 1.8rem;
+        color: #323232;
+    }
+
+    &_button {
+        background: #0f4ba7;
+        border-radius: 0.8rem;
+        font-family: 'Inter', sans-serif;
+        font-size: 1.8rem;
+        text-align: center;
+        color: #ffffff;
+        padding: 1.6rem;
+        position: absolute;
+        bottom: 3rem;
+        right: 2.4rem;
+        left: 2.4rem;
+
+        &:active {
+            opacity: 0.7;
+        }
+    }
+
+    .account-list {
+        margin-top: 2.4rem;
+
+        .account {
+            background: #ffffff;
+            box-shadow: 0 0.1rem 0.5rem rgba(35, 87, 234, 0.15);
+            border-radius: 0.5rem;
+            padding: 2rem 1.5rem;
+
+            &:not(:last-child) {
+                margin-bottom: 1rem;
+            }
+
+            &_button {
+                width: 1.6rem;
+                height: 1.6rem;
+                border-radius: 50%;
+                border: 0.1rem solid #ebebeb;
+                position: relative;
+                margin-right: 1.5rem;
+                margin-top: 0.4rem;
+
+                &--dot {
+                    background: #1a22b6;
+                    width: 0.8rem;
+                    height: 0.8rem;
+                    border-radius: 50%;
+                }
+            }
+
+            &_name {
+                font-size: 1.4rem;
+                line-height: 2.4rem;
+                color: #717171;
+            }
+
+            &_money {
+                font-size: 1.4rem;
+                line-height: 1.6rem;
+                font-weight: 700;
+                color: #484848;
+                margin-top: 0.4rem;
+            }
+        }
+    }
+}

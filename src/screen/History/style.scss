@@ -1,0 +1,107 @@
+.history {
+    height: 100vh;
+    overflow: hidden;
+    background: #f7f7f7;
+    padding-top: 6rem;
+    font-family: 'AvertaStd', sans-serif;
+
+    .infinite-scroller {
+        height: calc(100vh - 6rem);
+        padding: 1rem 3rem 0.5rem;
+        overflow-y: scroll;
+
+        .spinner {
+            margin: 0 auto;
+            height: 2.5rem;
+            width: 2.5rem;
+            animation: rotate 0.8s infinite linear;
+            border: 0.2rem solid #1a22b6;
+            border-right-color: transparent;
+            border-radius: 50%;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .nodata {
+        font-size: 1.6rem;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .line {
+        transform: translateY(0.5rem);
+        width: 0.2rem;
+        background-color: #0f4ba7;
+        position: relative;
+
+        .cycle {
+            background: #0f4ba7;
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            transform: translateX(-0.4rem);
+        }
+    }
+
+    &_content {
+        margin-left: 1.5rem;
+        flex: 1;
+        padding-bottom: 2.5rem;
+
+        .date {
+            font-weight: bold;
+            font-size: 1.4rem;
+            color: #0f4ba7;
+        }
+
+        .detail {
+            margin-top: 1.2rem;
+            font-size: 1.4rem;
+            color: #9a9a9a;
+
+            &_money {
+                font-weight: bold;
+                color: #717171;
+            }
+
+            &_invoice {
+                color: #717171;
+                word-break: break-all; 
+                letter-spacing: -0.2px;
+            }
+ 
+            &_account {
+                word-break: break-all;
+                text-align: right;
+                padding-left: 0.8rem;
+                letter-spacing: -0.2px;
+            }
+
+            &_time {
+                font-size: 1.2rem;
+            }
+
+            &_mt {
+                margin-top: 0.5rem;
+            }
+        }
+
+        .dashed {
+            flex: 1;
+            border-bottom: 1px dashed #c4c4c4;
+            margin: 0 0.4rem 0.3rem;
+        }
+
+        .see-more {
+            font-size: 1.2rem;
+            letter-spacing: -0.3px;
+            color: #0f4ba7;
+            margin-top: 1.1rem;
+        }
+    }
+}

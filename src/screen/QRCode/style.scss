@@ -1,0 +1,116 @@
+.qrcode {
+    margin-top: 0.7rem;
+    padding-bottom: 3rem;
+
+    &_code {
+        background: #ffffff;
+        box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.05);
+        border-radius: 1.6rem;
+        padding: 1.4rem 2rem 2.4rem;
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+
+        .vietqr {
+            max-height: 4rem;
+            width: auto;
+            height: 100%;
+        }
+
+        .content-code {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            min-width: 18rem;
+            min-height: 18rem;
+        }
+
+        .content-icons {
+            width: 100%;
+            max-width: 18rem;
+            .napas-icon {
+                max-height: 2.6rem;
+                width: auto;
+                height: 100%;
+            }
+
+            .mb-icon {
+                max-height: 2.4rem;
+                width: auto;
+                height: 100%;
+            }
+        }
+
+        .qrcode_account {
+            margin-top: 3.4rem;
+            font-size: 1.4rem;
+            text-align: center;
+            color: #717171;
+        }
+    }
+
+    &_invoice {
+        margin-top: 1.7rem;
+        background: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(0.8rem);
+        border-radius: 1.6rem;
+        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
+        text-align: center;
+        color: #717171;
+
+        .label {
+            font-weight: 700;
+            font-size: 1.8rem;
+        }
+
+        .invoice_code {
+            font-size: 1.4rem;
+            margin-top: 0.8rem;
+        }
+    }
+
+    &_payment {
+        margin-top: 1.7rem;
+        background: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(0.8rem);
+        border-radius: 1.6rem;
+        padding-top: 1.2rem;
+        padding-bottom: 1.6rem;
+        text-align: center;
+        color: #717171;
+
+        .money {
+            font-size: 1.4rem;
+        }
+
+        .amount {
+            font-weight: 700;
+            font-size: 3.2rem;
+            color: #0f4ba7;
+            margin-top: 1.6rem;
+            padding-right: 1rem;
+            padding-left: 1rem;
+            word-break: break-all;
+        }
+
+        .unit {
+            font-weight: bold;
+            font-size: 1.4rem;
+            color: #9a9a9a;
+            margin-top: 0.8rem;
+        }
+    }
+
+    &_button_home {
+        background: #0f4ba7;
+        border-radius: 0.8rem;
+        padding: 1.6rem;
+        margin-top: 1.4rem;
+        font-size: 1.8rem;
+        text-align: center;
+        color: #ffffff;
+
+        &:active {
+            opacity: 0.8;
+        }
+    }
+}

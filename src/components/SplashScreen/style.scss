@@ -1,0 +1,28 @@
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loading-container {
+    min-height: 90vh;
+    width: 100%;
+    font-weight: 400;
+    line-height: 2.5rem;
+
+    .overlay {
+        padding-bottom: 3rem;
+        .spinner {
+            margin: 0 auto;
+            height: 34px;
+            width: 34px;
+            animation: rotate 0.8s infinite linear;
+            border: 3px solid #1a22b6;
+            border-right-color: transparent;
+            border-radius: 50%;
+        }
+    }
+}
