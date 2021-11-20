@@ -64,7 +64,7 @@ function Calculator({
                     <Button name="000" clickHandler={handleClick} />
                     <Button name="Del" clickHandler={handleClick} />
                     <Button name="7" clickHandler={handleClick} />
-                    <Button name="8" clickHandler={handleClick} />
+                    <Button name="68" clickHandler={handleClick} />
                     <Button name="9" clickHandler={handleClick} />
                     <Button name="/" clickHandler={handleClick} />
                     <Button name="4" clickHandler={handleClick} />
