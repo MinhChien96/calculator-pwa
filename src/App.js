@@ -88,8 +88,8 @@ function App() {
 
     const fetchInformation = async () => {
         try {
-            await getToken();
-            await fetchAccount();
+            // await getToken();
+            // await fetchAccount();
             setFirstLoading(false);
         } catch (error) {
             toast.error('Có lỗi xảy ra, hãy thử lại sau');
